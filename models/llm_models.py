@@ -28,21 +28,4 @@ def generate_response(prompt: str, max_tokens: int = 1024) -> str:
         return f"Error generating response: {str(e)}"
 
 
-# def generate_response(prompt: str, max_tokens: int = 100) -> str:
-#     """
-#     Generates a response using Google's Gemini model (gemini-pro).
 
-#     :param prompt: Prompt text to send to the model.
-#     :param max_tokens: Maximum number of tokens in the output.
-#     :return: Model's response text.
-#     """
-#     try:
-#         response = model.generate_content(
-#             prompt,
-#             generation_config={
-#                 "max_output_tokens": max_tokens
-#             }
-#         )
-#         return response.text.strip()
-#     except Exception as e:
-#         return f"Error: {str(e)}"
